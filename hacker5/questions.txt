@@ -1,0 +1,33 @@
+0.  BMP: 2^32 = 4.2 billion if 32bbp. GIF: 2^8 = 256 colors. JPEG: 2^24 = 16.7 million.
+    PNG: 2^24 = 16.7 million.
+1.  GIF supports animation.
+    stdint.h is a header file that declares integer types of specified widths.
+2.  Lossy compression means images can be made smaller, but at a loss
+    to quality. Lossless means the image never loses quality, even
+    when it's shrunk.
+    uint8_t, uint32_t, int32_t, and uint16_t allow you to limit the number of data that can be stored in a particular variable. Also matches up with 
+    BYTE, DWORD, LONG, WORD sizes in bits.
+3.  JPEG uses lossy compression.
+    BYTE is 1 byte, a DWORD is 4 bytes, a LONG is 4 bytes, and a WORD is 2 bytes.
+4.  When a file is deleted on a FAT (file allocation table) system,
+    the metadata pointer is rewritten, not the data. The filename's
+    first character in the file directory is modified to signal it
+    has been erased, and the system moves the file's FAT clusters
+    to the hard drive's list of free clusters.
+    
+    
+5.  You can overwrite data to make sure your files won't be recovered.
+    bfSize is the size of the struct for BITMAPFILEHEADER, biSize is the size of the struct for BITMAPINFOHEADER.
+6.  If biHeight is negative, it indicates a top-down DIB, meaning biCompression is either BI_RGB or BI_BITFIELDS.
+7.  biBitCount indicates bpp.
+8.  fopen may return NULL because we haven't checked if outfile was NULL, as the argument passed to it (argv[2]) could have been NULL.
+9.  The third argument of fread is always 1 in our code because we only want to use it on one object.
+10. 3.
+11. fseek moves to a specific location within the file.
+12. SEEK_CUR is used by fseek to specify to seek something from the current location of the file.
+13. TODO
+14. TODO
+15. TODO
+16. TODO
+17. TODO
+18. Milo Banana dun it.

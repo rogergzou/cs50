@@ -1,0 +1,18 @@
+Functionality from the user's perspective
+
+1. Create an account
+
+2. Input self-imposed limits
+    - Total limit
+    - Optional= category limits
+    - Give warnings to users when close to spending caps
+    
+3. Input expenses
+    - List of broad categories
+    - List of specific categories
+    - User would have choice of inputting into broad categories or specific categories, depending on decision
+    
+4. Graphs for viewing expense history
+    - Total spending over time
+    - 
+    - 
